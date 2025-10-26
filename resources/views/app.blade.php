@@ -21,16 +21,17 @@
     </script>
 
     {{-- Background colors matching your theme --}}
-    <style>
+{{--     <style>
         html { background-color: oklch(1 0 0); }
         html.dark { background-color: oklch(0.145 0 0); }
-    </style>
+    </style> --}}
 
     <title inertia>{{ config('app.name', 'Zaynoon') }}</title>
 
     <link rel="icon" href="/zaynoon/Zaynoon-Favicon.png" sizes="any">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+    @vite(['resources/js/app.ts', 'resources/css/app.css'])
 
     @inertiaHead
 </head>
